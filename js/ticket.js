@@ -22,6 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
  `;
 
     let qrcode = QRCreator(textQR, { image: "SVG"	});
-    qrcode.download();
     document.querySelector(".ticket__info-qr").append(qrcode.result);
 });  
